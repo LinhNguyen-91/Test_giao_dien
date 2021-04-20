@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="exit">
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="fadeIn first">
+                <img src="logo/logo.png" id="icon" alt="User Icon" />
+            </div>
+            <div class="title">
+                <h5>Hãy gửi CV của bạn cho chúng tôi</h5>
+            </div>
+            <div class="bottom-title">
+            </div>
+            <form method="POST" id="registration">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <label for="">Tên của bạn</label>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <input type="text" class="fadeIn second" id="name" name="name" placeholder="Ví dụ: Nguyễn Văn A">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <label for="">Số điện thoại</label>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <input type="number" min="0" class="fadeIn third" id="phone" name="phone" placeholder="số điện thoại liên lạc">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <label for="">Vị trí</label>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <select id="position">
+                                <option value="Junior">Junior Ecommerce Web Developer</option>
+                                <option value="Inter">Inter</option>
+                                <option value="Fresher">Fresher</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <label for="">Kinh nghiệm làm việc</label>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <textarea placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard d scrambled it to make a type specimen book." name="exp" id="exp" cols="30"
+                                rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="file">
+                        <label for="img" class="image"><i class="fas fa-paperclip fa-2x"></i> <span id="name-file">Đính
+                                kèm hình ảnh</span></label>
+                        <input type="file" onchange="loadImg(this)" id="img" name="img">
+                        <!-- <img id="hienanh" alt="" style="width:80px;height:80px;border:0;"> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <label for="">Email</label>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <input type="email" id="email" class="fadeIn second" name="email"
+                                placeholder="Ex: contact@freemind.vn">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" id="submit" class="fadeIn second" value="GỬI CV cho Freemind">
+                    </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+    integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/scrip.js"></script>
+
+</html>
